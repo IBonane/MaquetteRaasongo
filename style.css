@@ -1,0 +1,36 @@
+*, ::after,::before{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.raagsongo{
+    width:160px;
+    height: 30px;
+    margin-left: 15%;
+}
+.raagsongo h1{
+    position: relative; 
+    top: -10px; 
+    font-size: 30px;
+    color: #fd7e14;
+}
+
+.ads{
+    width:160px;
+    height: 30px;
+    background: #fd7e14;
+}
+.ads a{
+    position: relative; 
+    top: -11px; 
+    font-size: 30px;
+}
+
+@media screen and (max-width: 950px) {
+    .raagsongo{
+        padding-left: 0;
+    }
+  }
