@@ -1,9 +1,10 @@
 $(document).ready(function(){
+    let city = {};
     $('[id*=region_').mouseover(function(){
         $('[id*=region_').css('fill', '#33bbff');
         $(this).css('fill', '#ffbb33');
 
-        let city = {
+        city = {
             "sahel": "Dori",
             "nord": "Ouahigouya",
             "centre": "Ouagadougou",
@@ -31,7 +32,7 @@ $(document).ready(function(){
         region.css('fill', '#ffbb33')
         regionId = region[0].id.replace('region_','');
         $(this).parents().attr({
-            "xlink:href": "#"+regionId
+            "xlink:href": "#"+city[regionId]
         });
 
         //regionId = region[0].id.replace('region_','');
