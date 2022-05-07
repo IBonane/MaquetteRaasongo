@@ -3,7 +3,7 @@ $(document).ready(function(){
         $('[id*=region_').css('fill', '#33bbff');
         $(this).css('fill', '#ffbb33');
         $("#regionName").text($(this)[0].id.replace('region_','').toUpperCase());
-    });
+    });g
 
     $("[id*=region_]").click(function(){
         // console.log($(this)[0].id);
