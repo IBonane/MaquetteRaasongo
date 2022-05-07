@@ -2,7 +2,23 @@ $(document).ready(function(){
     $('[id*=region_').mouseover(function(){
         $('[id*=region_').css('fill', '#33bbff');
         $(this).css('fill', '#ffbb33');
-        $("#regionName").text($(this)[0].id.replace('region_','').toUpperCase());
+
+        let city = {
+            "sahel": "Dori",
+            "nord": "Ouahigouya",
+            "centre": "Ouagadougou",
+            "centre_nord": "Kaya",
+            "centre_est": "Tenkodogo",
+            "centre_ouest": "Koudougou",
+            "centre_sud": "Manga",
+            "sud_ouest": "Gaoua",
+            "est":"Fada N'gourma",
+            "plateau_central": "Ziniaré",
+            "boucle_mouhoun":"Dédougou",
+            "hauts_bassins":"Bobo-Dioulasso",
+            "cascade":"Banfora"
+        }
+        $("#regionName").text(city[$(this)[0].id.replace('region_','')]);
     });
 
     $("[id*=region_]").click(function(){
