@@ -33,4 +33,14 @@ body{
     .raagsongo{
         padding-left: 0;
     }
-  }
+}
+
+.div-ads{
+    max-width: 1000px;
+    width: 80%;
+    margin-left: 10%;
+}
+.div-ads div .div-card-body{
+    margin-left: 4.5%;
+    width: 91%;
+}
