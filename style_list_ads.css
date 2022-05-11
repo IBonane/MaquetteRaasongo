@@ -49,7 +49,7 @@ body {
 }
 
 .conatiner-img img{
-    width: 35px;
+    width: 100px;
     /*border-radius: 50%;*/
     margin-right: 10px;
 }
@@ -76,5 +76,9 @@ body {
         height: auto;
         text-align: center;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+    .action-btn-list-ads {
+        width: 30%;
+        margin-top: 15px;
     }
 }

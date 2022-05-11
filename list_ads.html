@@ -4,25 +4,129 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+     <!-- Bootstrap Font Icon CSS -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./style_list_ads.css">
+    <title>Document</title>
 </head>
 <body>
-    <section class="global-conatiner"> 
-        <main class="main-content">
-            <h2 class="main-title">Database Results</h2>
-            <div class="table-results">
-                <div class="table-items">
-                    <div class="conatiner-img">
-                        <img src="https://img-19.commentcamarche.net/cI8qqj-finfDcmx6jMK6Vr-krEw=/1500x/smart/b829396acc244fd484c5ddcdcb2b08f3/ccmcms-commentcamarche/20494859.jpg" alt="">
-                        <p class="name">Bonane djimba</p>
-                    </div>
-                    <p class="email">bonanedjimba@gmail.com</p>
-                    <p class="phone">+33 6 10 04 44 59</p>
+    <nav class="navbar navbar-expand-xl navbar-light bg-light shadow fixed-top p-3 mb-5 rounded px-xxl-5">
+        <div class="container-fluid">
+          <div class="navbar-brand raagsongo">
+            <h1 class="fw-bold">
+              RaagSongo
+            </h1>
+          </div>
+    
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse px-xxl-5" id="navbarColor01">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item dropdown mx-xxl-3">
+                <a class="nav-link dropdown-toggle text-dark" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Type d'annonce</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Vente</a>
+                  <a class="dropdown-item" href="#">Location</a>
+                  <a class="dropdown-item" href="#">Echange</a>
                 </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-dark" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Categorie</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Immobilier</a>
+                  <a class="dropdown-item" href="#">Offre d'emploi</a>
+                  <a class="dropdown-item" href="#">Parcelle</a>
+                  <a class="dropdown-item" href="#">Voiture</a>
+                </div>
+              </li>
+              <li class="nav-item mx-xxl-3">
+                <a class="nav-link text-dark " href="#">Favoris</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-dark" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Profil</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">paramêtre</a>
+                  <a class="dropdown-item" href="#">mes annonces</a>
+                  <a class="dropdown-item" href="#">Déconnexion</a>
+                </div>
+              </li>
+              <li class="nav-item mx-xxl-3" style="min-width:120px">
+                <a class="nav-link text-dark" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="bi bi-search"></i> Recherche</a>
+              </li>
+            </ul>
+            <div style="width:250px; height: 35px;" class="navbar-brand rounded mx-xxl-5 ads">
+              <a  href="#" class="text-decoration-none text-light fw-bold">
+                <i class="bi bi-cloud-plus" style="position: relative; top: 1px; margin-left: 15px;"></i> 
+                <span style="position: relative; top: -3px; font-size: 18px;">Ajouter une annonce</span>
+              </a>
+            </div>          
+          </div>
+        </div>
+      </nav>
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Recherche d'annonces</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <form action="#" method="get"></form>
+                <div class="modal-body">
+                  <input class="form-control" type="text" placeholder="Recherche..."> 
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                  <button type="submit" class="btn btn-primary">Chercher</button>
+                </div>
+            </form>
+            </div>
+          </div>
+        </div>
+    <section class="global-conatiner mt-5"> 
+        <main class="main-content">
+            <h2 class="main-title text-center">Mes annonces <hr></h2>
+            <div class="table-results">
+                <div class="table-items shadow p-3 mb-5 rounded">
+                    <div class="conatiner-img">
+                        <img src="https://cdn.motor1.com/images/mgl/kXrEN/s1/4x3/mercedes-amg-gt.webp" alt="">
+                        <p class="text-start">mini Cooper cabriolet édition Greenwich </p>
+                    </div>
+                    <div class="conatiner-img ms-lg-5 pt-3">
+                        <a class="action-btn-list-ads btn btn-info h5 mx-5">modifier</a>
+                        <a class="action-btn-list-ads btn btn-danger h5 mx-5">supprimer</a>
+                    </div>  
+                </div>
+                <div class="table-items shadow p-3 mb-5 rounded">
+                    <div class="conatiner-img">
+                        <img src="https://cdn.motor1.com/images/mgl/kXrEN/s1/4x3/mercedes-amg-gt.webp" alt="">
+                        <p class="text-start">mini Cooper cabriolet édition Greenwich </p>
+                    </div>
+                    <div class="conatiner-img ms-lg-5 pt-3">
+                        <a class="action-btn-list-ads btn btn-info h5 mx-5">modifier</a>
+                        <a class="action-btn-list-ads btn btn-danger h5 mx-5">supprimer</a>
+                    </div>  
+                </div>
+                <div class="table-items shadow p-3 mb-5 rounded">
+                    <div class="conatiner-img">
+                        <img src="https://cdn.motor1.com/images/mgl/kXrEN/s1/4x3/mercedes-amg-gt.webp" alt="">
+                        <p class="text-start">mini Cooper cabriolet édition Greenwich </p>
+                    </div>
+                    <div class="conatiner-img ms-lg-5 pt-3">
+                        <a class="action-btn-list-ads btn btn-info h5 mx-5">modifier</a>
+                        <a class="action-btn-list-ads btn btn-danger h5 mx-5">supprimer</a>
+                    </div>  
+                </div>
+                
+                
             </div>
         </main>
     </section>
-    <!-- <script src="./script_list_ads.js"></script> -->
 </body>
 </html>
