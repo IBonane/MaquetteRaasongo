@@ -63,7 +63,7 @@ body{
 }
 
 /*profil*/
-.card {
+.card-setting {
     box-shadow: 0 0.15rem 1.75rem 0 rgb(33 40 50 / 15%);
 }
 .card .card-header {
