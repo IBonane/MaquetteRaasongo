@@ -11,9 +11,12 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
     <!-- Option 1: Include in HTML -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- Bootstrap Font Icon CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <title>parametre du profil</title>
+    <title>inscription</title>
 </head>
 
 <body class="bg-light">
@@ -96,106 +99,84 @@
         <!-- Account page navigation-->
         <section class="mt-5 pt-5">
             <div class="container-xl px-4 mt-4">
-            <div class="text-center">
-                <a class="btn btn-info mx-3" id="profileLink">Profile</a>
-                <a class="btn btn-warning mx-3" id="securityLink">Securité</a>
-            </div>
             <div class="row">
-                <div class="col-xl-12">
-                    <!-- Account details card-->
-                    <div>
-                        <div id="profileDiv" class="card mb-4 mt-5">
-                            <div class="card-header">Détails du compte</div>
-                            <div class="card-body">
-                                <form>
-                                    <!-- Form Group (username)-->
-                                    <div class="mb-3">
-                                        <label class="small mb-1" for="inputUsername">Nom d’utilisateur</label>
-                                        <input class="form-control" id="inputUsername" type="text"
-                                            placeholder="Enter your username" value="username">
-                                    </div>
-                                    <!-- Form Row-->
-                                    <div class="row gx-3 mb-3">
-                                        <!-- Form Group (first name)-->
-                                        <div class="col-md-6">
-                                            <label class="small mb-1" for="inputFirstName">Prenom</label>
-                                            <input class="form-control" id="inputFirstName" type="text"
-                                                placeholder="Enter your first name" value="Valerie">
-                                        </div>
-                                        <!-- Form Group (last name)-->
-                                        <div class="col-md-6">
-                                            <label class="small mb-1" for="inputLastName">Nom</label>
-                                            <input class="form-control" id="inputLastName" type="text"
-                                                placeholder="Enter your last name" value="Luna">
-                                        </div>
-                                    </div>
-                                    <!-- Form Row        -->
-                                    <div class="row gx-3 mb-3">
-                                        <!-- Form Group (organization name)-->
-                                        <div class="col-md-6">
-                                            <label class="small mb-1" for="inputOrgName">Profession</label>
-                                            <input class="form-control" id="inputOrgName" type="text"
-                                                placeholder="situation professionnelle" value="Start Bootstrap">
-                                        </div>
-                                        <!-- Form Group (location)-->
-                                        <div class="col-md-6">
-                                            <label class="small mb-1" for="inputLocation">Ville d'habitaion</label>
-                                            <input class="form-control" id="inputLocation" type="text"
-                                                placeholder="Enter your location" value="San Francisco, CA">
-                                        </div>
-                                    </div>
-                                    <!-- Form Group (email address)-->
-                                    <div class="mb-3">
-                                        <label class="small mb-1" for="inputEmailAddress">Email</label>
-                                        <input class="form-control" id="inputEmailAddress" type="email"
-                                            placeholder="Enter your email address" value="name@example.com">
-                                    </div>
-                                    <!-- Form Row-->
-                                    <div class="row gx-3 mb-3">
-                                        <!-- Form Group (phone number)-->
-                                        <div class="col-md-6">
-                                            <label class="small mb-1" for="inputPhone">Numéro de téléphone</label>
-                                            <input class="form-control" id="inputPhone" type="tel"
-                                                placeholder="Enter your phone number" value="555-123-4567">
-                                        </div>
-                                        <!-- Form Group (birthday)-->
-                                        <div class="col-md-6">
-                                            <label class="small mb-1" for="inputBirthday">Date de naissance</label>
-                                            <input class="form-control" id="inputBirthday" type="date" name="birthday"
-                                                placeholder="Enter your birthday" value="06/10/1988">
-                                        </div>
-                                    </div>
-                                    <!-- Save changes button-->
-                                    <button class="btn btn-primary float-end" type="button">sauvegarder</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Change password card-->
-                    <div class="card mb-4 mt-5" id="securityDiv">
-                        <div class="card-header">Changer le mot de passe</div>
+              <div class="col-xl-12">
+                  <!-- Account details card-->
+                <div>
+                    <div id="profileDiv" class="card mb-4 mt-5">
+                        <div class="card-header">Inscription</div>
                         <div class="card-body">
                             <form>
-                                <!-- Form Group (current password)-->
-                                <div class="mb-3">
-                                    <label class="small mb-1" for="currentPassword">Mot de passe actuel</label>
-                                    <input class="form-control" id="currentPassword" type="password"
-                                        placeholder="Enter current password">
-                                </div>
-                                <!-- Form Group (new password)-->
-                                <div class="mb-3">
-                                    <label class="small mb-1" for="newPassword">Nouveau mot de passe</label>
-                                    <input class="form-control" id="newPassword" type="password"
-                                        placeholder="Enter new password">
-                                </div>
-                                <!-- Form Group (confirm password)-->
-                                <div class="mb-3">
-                                    <label class="small mb-1" for="confirmPassword">Confirmation du mot de passe</label>
-                                    <input class="form-control" id="confirmPassword" type="password"
-                                        placeholder="Confirm new password">
-                                </div>
-                                <button class="btn btn-primary float-end" type="button">sauvegarder</button>
+                              <!-- Form Group (username)-->
+                              <div class="mb-3">
+                                  <label class="small mb-1" for="inputUsername">Nom d’utilisateur</label>
+                                  <input class="form-control" id="inputUsername" type="text"
+                                      placeholder="Entrer un nom d'utilisateur">
+                              </div>
+                              <!-- Form Row-->
+                              <div class="row gx-3 mb-3">
+                                  <!-- Form Group (first name)-->
+                                  <div class="col-md-6">
+                                      <label class="small mb-1" for="inputFirstName">Prenom</label>
+                                      <input class="form-control" id="inputFirstName" type="text"
+                                          placeholder="Entrer votre prénom">
+                                  </div>
+                                  <!-- Form Group (last name)-->
+                                  <div class="col-md-6">
+                                      <label class="small mb-1" for="inputLastName">Nom</label>
+                                      <input class="form-control" id="inputLastName" type="text"
+                                          placeholder="Entrer votre nom">
+                                  </div>
+                              </div>
+                              <!-- Form Row        -->
+                              <div class="row gx-3 mb-3">
+                                  <!-- Form Group (organization name)-->
+                                  <div class="col-md-6">
+                                      <label class="small mb-1" for="inputOrgName">Profession</label>
+                                      <input class="form-control" id="inputOrgName" type="text"
+                                          placeholder="votre profession">
+                                  </div>
+                                  <!-- Form Group (location)-->
+                                  <div class="col-md-6">
+                                      <label class="small mb-1" for="inputLocation">Ville d'habitaion</label>
+                                      <input class="form-control" id="inputLocation" type="text"
+                                          placeholder="lieu d'habitation">
+                                  </div>
+                              </div>
+                              <!-- Form Group (email address)-->
+                              <div class="mb-3">
+                                  <label class="small mb-1" for="inputEmailAddress">Email</label>
+                                  <input class="form-control" id="inputEmailAddress" type="email"
+                                      placeholder="votre email">
+                              </div>
+                              <!-- Form Row-->
+                              <div class="row gx-3 mb-3">
+                                  <!-- Form Group (phone number)-->
+                                  <div class="col-md-6">
+                                      <label class="small mb-1" for="inputPhone">Numéro de téléphone</label>
+                                      <input class="form-control" id="inputPhone" type="tel"
+                                          placeholder="Entrer votre numéro de téléphone">
+                                  </div>
+                                  <!-- Form Group (birthday)-->
+                                  <div class="col-md-6">
+                                      <label class="small mb-1" for="inputBirthday">Date de naissance</label>
+                                      <input class="form-control" id="inputBirthday" type="date" name="birthday"
+                                          placeholder="Entrer votre date de naissance">
+                                  </div>
+
+                                  <div class="col-md-6">
+                                    <label class="small mb-1" for="password">Mot de passe</label>
+                                    <input class="form-control" id="password" type="password"
+                                        placeholder="Entrer votre numéro de téléphone">
+                                  </div>
+                                  <div class="col-md-6">
+                                      <label class="small mb-1" for="confirmPassword">Confirmation du mot de passe</label>
+                                      <input class="form-control" id="confirmPassword" type="password"
+                                          placeholder="Confirmer votre mot de passe">
+                                  </div>
+                              </div>
+                              <!-- Save changes button-->
+                              <button class="btn btn-primary float-end" type="button">sauvegarder</button>
                             </form>
                         </div>
                     </div>
